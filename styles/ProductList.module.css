@@ -1,0 +1,13 @@
+.product_listing {
+    margin-top: 10rem;
+}
+
+
+.product_listing h2 {
+    text-align: center;
+    font-size: var(--font-size-big);
+    font-weight: bold;
+}
+.product_listing span {
+    color: var(--secondary-background);
+}

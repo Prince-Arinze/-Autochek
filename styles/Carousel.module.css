@@ -1,0 +1,67 @@
+.carousel_slider {
+   width: 100%;
+   max-height: 400px;
+   height: 100%;
+   margin-bottom: 5rem;
+}
+
+.carousel_img {
+   height: 500px;
+}
+.carousel_container {
+    position: relative;
+}
+
+.banner {
+  position: absolute;
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 4px #000;
+}
+
+.banner h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 2px 4px #000;
+}
+
+.banner span {
+  font-size: 18px;
+}
+
+.tag {
+  color: var(--store-color);
+}
+
+@media screen and (min-width: 768px){
+    .banner {
+      width: 60%;
+      padding: 3rem 2rem;
+    }
+    .banner p {
+      font-size: 18px;
+      color: #fff;
+      font-weight: bolder;
+    }
+    
+    .banner h2, .banner .tag  {
+        font-size: 36px;
+        font-weight: 800;
+    }
+    
+    .banner span {
+      font-size: 22px;
+    }
+}
