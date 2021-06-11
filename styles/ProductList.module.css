@@ -26,7 +26,8 @@
     background-color: #F9F9F9;
     box-shadow: 0 0 10px var(--color);
     padding: 2rem;
-    height: 800px;
+    height: auto;
+    margin-top: 1.5rem !important;
  
 }
 

@@ -8,7 +8,7 @@ const Advert = ({products}) => {
                  <h3 className="col-md-4 effect-bg">Carnival Sales</h3>
                  <p className="l-nut-middle">Get Extra 10% Off</p>
                  <div className="col-md-8 bg-right-nut">
-                    <Image src={products[0].imageUrl} alt={products[0].title} width={800} height={600} layout="responsive" className="advert__img"/>
+                    <Image src="/car-fan.png" alt="Sells advert" width={800} height={600} layout="responsive" className="advert__img"/>
                  </div>
             </div>
         </div>

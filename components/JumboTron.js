@@ -24,7 +24,7 @@ const Jumbotron = () => {
                                   <div className="col-sm-7 offer-name">
                                       <h6>Neat, Smooth, and better</h6>
                                       <h4 className="mt-2 mb-3">King of the road</h4>
-                                      <p>Free shipping order over  &#8358;5,0000</p>
+                                      <p>Free shipping order over  &#8358;50,000</p>
                                   </div>
                                   <div className="col-sm-5 offerimg">
                                       <Image src="/sport-car.png" alt="mercedez" width={600} height={600} />

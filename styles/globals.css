@@ -260,7 +260,8 @@ span.item_prices {
 }
 .search__title {    
    color: #F45C5D;
-   font-size: 21px
+   font-size: 21px;
+   margin-top: -2rem;
 }
 
 /* Advert Section */
@@ -304,7 +305,7 @@ p.l-nut-middle {
 /* Jumbotron */
 
 .jumbotron {
-   background: url(../public/car-fancy.jpg) no-repeat center fixed;
+   background: url(/car-fancy.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -341,6 +342,54 @@ p.l-nut-middle {
 .offerimg {
    width: 100%;
 
+}
+
+/* Aside */
+
+.btn__item__search:hover {
+   background-color: #000000 !important;
+   border-radius: #000000 !important;
+   outline: none;
+   transition: .3s ease;
+}
+
+h3.agileits-sear-head {
+   color: #F45C5D;
+   font-size: 21px;
+}
+
+.search-range ul li {
+   display: block !important;
+   margin-left: -2.3rem !important;
+}
+.search-range ul li:hover {
+   cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+   margin: 4px 4px 0 0;
+}
+
+input.checked {
+   display: inline-block;
+   cursor: pointer;
+}
+.discount__check li {
+   margin-left: -2.3rem !important; 
+}
+.discount__check li span {
+   color: var(--dark-color);
+}
+
+.customer-rev ul li {
+   list-style: none;
+}
+.left-side ul li {
+   display: inline-block;
+   width: 100%;
+   margin-bottom: 6px;
+}
+.customer-rev ul li .i {
+   color: #FFC107;
 }
 
 /* Media Queries */

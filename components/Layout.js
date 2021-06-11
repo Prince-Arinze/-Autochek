@@ -1,3 +1,4 @@
+import Jumbotron from "./JumboTron"
 import Search from "./Search"
 import SecondaryNav from "./SecondaryNav"
 
@@ -7,6 +8,7 @@ const Layout = ({children}) => {
             <SecondaryNav />
             <Search />
             { children }
+            <Jumbotron />
         </div>
     )
 }

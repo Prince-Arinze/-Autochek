@@ -1,6 +1,5 @@
 
 import productStyle from '../styles/ProductList.module.css'
-import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -8,22 +7,23 @@ import Link from 'next/link';
 import numbro from 'numbro'
 import Pagination from './Pagination';
 import Advert from './Advert';
+import Sidebar from './Sidebar';
 
 const ProductListings = ({products, postPerPage, totalPages, paginate}) => { 
     return (
        <div className={`container ${productStyle.product_listing}`}>
            <h2 className="heading-tittle text-center font-italic"><span>O</span>ur <span>N</span>ew <span>P</span>roducts</h2>
-           <Container className={`${productStyle.products_container}`}>
-                <Row className="gy-5">
+           <div className={`${productStyle.products_container} container`}>
+                <div className="row">
                
-                    <Col lg="9" md="12" className="products__section"> 
-                   
-                         <Row  className={productStyle.content_row}>
-                           <Col lg="12"><h3 className="heading-tittle text-center font-italic">Brand New  Cars</h3></Col>
+                    <div className="col-lg-9 products__section"> 
+                    <div className="text-left p-4">
+                         <div  className={`${productStyle.content_row} row`}>
+                           <div className="col-lg-12"><h3 className="heading-tittle text-center font-italic">Brand New  Cars</h3></div>
                             {  products.map(product => (
                                 <>
                          
-                                <Col lg="4" md="6" key={product.id} className="mt-5">
+                                <div key={product.id} className="mt-5 col-lg-4 col-md-6">
                                     <div className="men-thumb-item text-center new__box">
                                          <Image src={product.imageUrl} alt={product.title} height={150} width={100} className={productStyle.product_img}/>
                                         
@@ -47,22 +47,25 @@ const ProductListings = ({products, postPerPage, totalPages, paginate}) => {
                                              </div>
                                          </div>
                                     </div>
-                                </Col> 
+                                </div> 
                                 </>
                               )) 
                             }
-                        
-                         </Row>
+                           
+                         </div>
+                         </div>
                          <Pagination totalPages={totalPages} postPerPage={postPerPage} paginate={paginate}/>
                          <Advert products={products}/>
-                    </Col>       
-                    <Col lg="3" md="12" className={`${productStyle.sidebar} mt-lg-0 mt-4 p-lg-0 sidebar__section`}>
-                        <aside className="p-sm-4 p-3">
-                            <h3 className="search__title">Search here...</h3>
-                        </aside>
-                    </Col>
-                </Row>
-           </Container>
+                    </div>       
+                    <div className={`${productStyle.sidebar} col-lg-3 mt-lg-0 mt-5 sidebar__section`}>
+                        <div className="text-left p-4">
+                            <div className="row">
+                                <Sidebar />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
        </div> 
     )
 }
