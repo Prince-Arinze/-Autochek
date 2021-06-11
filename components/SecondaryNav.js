@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import { FaShoppingCart, FaMapMarker, FaPhone, FaTruck, FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 
-import { Button } from 'reactstrap'
-
 const SecondaryNav = () => {
       return (
           <div className="secondary">

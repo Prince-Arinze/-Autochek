@@ -9,7 +9,7 @@ import Pagination from './Pagination';
 import Advert from './Advert';
 import Sidebar from './Sidebar';
 
-const ProductListings = ({products, postPerPage, totalPages, paginate}) => { 
+const ProductListings = ({products, postPerPage, totalPages, paginate, data}) => { 
     return (
        <div className={`container ${productStyle.product_listing}`}>
            <h2 className="heading-tittle text-center font-italic"><span>O</span>ur <span>N</span>ew <span>P</span>roducts</h2>
@@ -60,7 +60,7 @@ const ProductListings = ({products, postPerPage, totalPages, paginate}) => {
                     <div className={`${productStyle.sidebar} col-lg-3 mt-lg-0 mt-5 sidebar__section`}>
                         <div className="text-left p-4">
                             <div className="row">
-                                <Sidebar />
+                                <Sidebar data={data}/>
                             </div>
                         </div>
                     </div>

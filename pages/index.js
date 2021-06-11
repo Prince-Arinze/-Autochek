@@ -25,7 +25,7 @@ export default function Home({data, allProducts }) {
       </Head>
       <Navbars data={data} products={allProducts}/>
       <CarouselSlide data={allProducts}/>
-      <ProductListings products={currentPosts} postPerPage={postPerPage} totalPages={result.length} paginate={paginate}/>
+      <ProductListings data={data} products={currentPosts} postPerPage={postPerPage} totalPages={result.length} paginate={paginate}/>
     </div>
   )
 }
