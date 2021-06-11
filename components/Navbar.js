@@ -3,25 +3,19 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
   UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  DropdownToggle
 } from 'reactstrap';
 import {useRouter} from 'next/router'
 import Select from './Select';
 
-import navStyles from '../styles/NavStyle.module.css'
-import ProductListings from './ProductListing';
+import navStyles from '../styles/NavStyle.module.css';
 import DropDowns from './Dropdown';
 
 const Navbars = ({data, products}) => {
- console.log(products)
   const router = useRouter()
   const isActive = (route) => {
     return route === router.pathname ? `${navStyles.activate}` : '';
