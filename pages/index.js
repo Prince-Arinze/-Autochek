@@ -3,6 +3,7 @@ import Head from 'next/head';
 import CarouselSlide from '../components/Carousel';
 import Navbars from '../components/Navbar';
 import ProductListings from '../components/ProductListing';
+import Jumbotron from '../components/JumboTron';
 export const getStaticProps = async ()  => {
   const res = await fetch(`https://api-prod.autochek.africa/v1/inventory/make?popular=true`)
   const data = await res.json();
@@ -36,6 +37,7 @@ export default function Home({data, newMedia, allProducts }) {
       <Navbars data={data} products={allProducts}/>
       <CarouselSlide data={allProducts}/>
       <ProductListings products={currentPosts} postPerPage={postPerPage} totalPages={result.length} paginate={paginate}/>
+      <Jumbotron />
     </div>
   )
 }

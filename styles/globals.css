@@ -281,7 +281,7 @@ h3.effect-bg {
    margin-top: 2.2em;
 }
 
-p.w3l-nut-middle {
+p.l-nut-middle {
     position: absolute;
     right: 47%;
     bottom: 42%;
@@ -300,6 +300,50 @@ p.w3l-nut-middle {
    width: 100%;
    z-index: 1;
 }
+
+/* Jumbotron */
+
+.jumbotron {
+   background: url(../public/car-fancy.jpg) no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    text-align: center;
+}
+
+.join-agile {
+   background: #efedee;
+   box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 4%);
+   border-radius: 4px;
+}
+
+.offer-name {
+   margin-top: 4em;
+}
+
+.offer-name h6 {
+   color: #F44336;
+   font-size: 18px;
+}
+.offer-name h4 {
+   font-size: 27px;
+}
+.offer-name p {
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 15px;
+      line-height: 1.9;
+      color: #999;
+      font-family: 'Open Sans', sans-serif;
+}
+.offerimg {
+   width: 100%;
+
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 768px){
    .container-nav {
