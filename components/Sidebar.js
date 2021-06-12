@@ -1,7 +1,6 @@
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { FaStar, FaStarHalf } from 'react-icons/fa';
 const Sidebar = ({data}) => {
-    console.log(data)
     return (
 
         <aside>
@@ -97,8 +96,8 @@ const Sidebar = ({data}) => {
                     Cars
                 </h3>
                 { data.makeList.map(data => (
-                     <ul className="text-left discount__check" key={data.id}>
-                       <li><input type="checkbox" className="checked"/><span>{data.title}</span></li>
+                     <ul className="text-left discount__check">
+                        <li key={data.id}><input type="checkbox" className="checked"/><span>{data.name}</span></li>
                      </ul>
                   ))
                    

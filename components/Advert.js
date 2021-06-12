@@ -1,7 +1,5 @@
 import Image from 'next/image'
-const Advert = ({products}) => {
-
-    console.log(products[0])
+const Advert = () => {
     return (
         <div className="product-sec1 product-sec2 px-sm-5 px-3">
             <div className="row">
